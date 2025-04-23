@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record System</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Record System</h1>
+
+        <div class = "form-section">
+            <input type="number" id="rollNo" placeholder="Roll Number"/>
+            <input type="text" id="name" placeholder="Name"/>
+            <input type="number" id="marks" placeholder="Marks"/>
+            <button type = "button" onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="search-section">
+            <input type="number" id="searchRoll" placeholder="Search by Roll Number"/>
+            <button type="button" onclick="searchStudent()">Search</button>
+        </div>
+
+        <div class="students-list" id="studentsList">
+            <!-- Student records will be displayed here -->
+        </div>
+    </div>
+    
+    <script src = "script.js"></script>
+</body>
+</html>
